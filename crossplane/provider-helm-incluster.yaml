@@ -4,7 +4,7 @@ apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: crossplane-provider-helm
-  namespace: crossplane-system
+  namespace: upbound-system
 
 ---
 
@@ -15,7 +15,7 @@ metadata:
 subjects:
 - kind: ServiceAccount
   name: crossplane-provider-helm
-  namespace: crossplane-system
+  namespace: upbound-system
 roleRef:
   kind: ClusterRole
   name: cluster-admin
